@@ -1,0 +1,4 @@
+com\accelerator\runners\MyTestRunner.class
+com\accelerator\stepdefinitions\AccountsPageSteps.class
+com\accelerator\hooks\ApplicationHooks.class
+com\accelerator\stepdefinitions\LoginPageSteps.class

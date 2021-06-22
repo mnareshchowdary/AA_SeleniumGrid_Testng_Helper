@@ -1,0 +1,4 @@
+# Created at 2021-06-22T16:25:44.129
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Selenium\Java Workspace\AA_SeleniumGrid_Testng-master.zip_expanded\AA_SeleniumGrid_Testng-master\AutomationAccelerator-seleniumgrid\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
