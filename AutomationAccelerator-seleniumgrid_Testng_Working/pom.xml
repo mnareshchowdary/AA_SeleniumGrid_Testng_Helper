@@ -137,6 +137,13 @@
                         <complianceLevel>${java.source-target.version}</complianceLevel>
                         <encoding>UTF-8</encoding>
                         <verbose>true</verbose>
+                        <argLine>
+-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+-Dcucumber.options="--plugin io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"
+</argLine>
+<systemPropertyVariables>
+<allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+</systemPropertyVariables>
                     </configuration>
 <!--                   <executions>
                       <execution>
