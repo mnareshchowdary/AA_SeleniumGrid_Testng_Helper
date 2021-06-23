@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.accelerator.runners.MyTestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 58.369 s <<< FAILURE! - in com.accelerator.runners.MyTestRunner
-runScenario(com.accelerator.runners.MyTestRunner)  Time elapsed: 18.319 s  <<< FAILURE!
-java.lang.AssertionError
-
-runScenario(com.accelerator.runners.MyTestRunner)  Time elapsed: 22.503 s  <<< FAILURE!
-java.lang.AssertionError
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 86.044 s - in com.accelerator.runners.MyTestRunner

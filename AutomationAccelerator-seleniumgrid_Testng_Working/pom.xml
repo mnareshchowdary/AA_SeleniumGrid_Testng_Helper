@@ -15,6 +15,8 @@
         <cucumber.version>6.9.0</cucumber.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>2.22.2</maven.surefire.version>
+        <aspectj.version>1.8.4</aspectj.version>
+        <java.source-target.version>1.8</java.source-target.version>
     </properties>
     <!--<repositories>
         <repository>
@@ -122,6 +124,38 @@
 			          </properties>
 			      </configuration>
 			</plugin>
+			
+			   <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>aspectj-maven-plugin</artifactId>
+                    <version>1.7</version>
+                    <configuration>
+                        <showWeaveInfo>true</showWeaveInfo>
+                        <source>${java.source-target.version}</source>
+                        <target>${java.source-target.version}</target>
+                        <Xlint>ignore</Xlint>
+                        <complianceLevel>${java.source-target.version}</complianceLevel>
+                        <encoding>UTF-8</encoding>
+                        <verbose>true</verbose>
+                    </configuration>
+<!--                   <executions>
+                      <execution>
+                            <phase>process-sources</phase>
+                            <goals>
+                                <goal>compile</goal>
+                                <goal>test-compile</goal>
+                            </goals>
+                        </execution> 
+                    </executions> --> 
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.aspectj</groupId>
+                            <artifactId>aspectjtools</artifactId>
+                           <version>${aspectj.version}</version>
+                       <!--<scope>runtime</scope> -->
+                        </dependency>
+                    </dependencies>
+                </plugin>
 			
 			
             
