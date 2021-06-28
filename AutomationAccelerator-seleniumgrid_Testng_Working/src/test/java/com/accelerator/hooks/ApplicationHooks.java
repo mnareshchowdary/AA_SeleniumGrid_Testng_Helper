@@ -27,7 +27,8 @@ public class ApplicationHooks {
 
     @Before(order = 1)
     public void launchBrowser() throws MalformedURLException {
-        String browserName = prop.getProperty("browser");
+     //   String browserName = prop.getProperty("browser");
+         String browserName = System.getProperty("browserName");
         driverFactory = new DriverFactory();
         System.out.println("Before Driver");
         driver = driverFactory.init_driver(browserName);
